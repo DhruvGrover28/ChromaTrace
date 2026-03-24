@@ -28,7 +28,7 @@ python -m src.vision_lab
 ```
 
 ## For Non-Technical Users (Windows)
-Download the latest `ChromaTrace.exe` from the GitHub Releases page, unzip it, and double-click to run.
+Download the latest `ChromaTrace-win64.zip` from the GitHub Releases page, unzip it, and run `ChromaTrace.exe` from the extracted folder.
 
 ## Build a Windows EXE (for release)
 ```powershell

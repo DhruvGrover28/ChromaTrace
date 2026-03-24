@@ -18,6 +18,14 @@ if (Test-Path $distDir) {
     Remove-Item $distDir -Recurse -Force
 }
 
-& $venvPython -m PyInstaller --noconsole --onefile --name ChromaTrace src\vision_lab.py
+& $venvPython -m PyInstaller --noconsole --onedir --name ChromaTrace src\vision_lab.py
 
-Write-Host "Build complete: dist\ChromaTrace.exe"
+$zipPath = Join-Path $distDir "ChromaTrace-win64.zip"
+if (Test-Path $zipPath) {
+    Remove-Item $zipPath -Force
+}
+
+Compress-Archive -Path (Join-Path $distDir "ChromaTrace") -DestinationPath $zipPath
+
+Write-Host "Build complete: dist\ChromaTrace\ (folder)"
+Write-Host "Release zip: dist\ChromaTrace-win64.zip"
