@@ -8,8 +8,8 @@ from typing import Dict, List, Tuple
 import cv2
 import numpy as np
 
-from colors import build_color_masks, cleanup_mask, get_default_ranges
-from tracker import SimpleTracker, TrackerConfig, draw_tracks
+from .colors import build_color_masks, cleanup_mask, get_default_ranges
+from .tracker import SimpleTracker, TrackerConfig, draw_tracks
 
 
 @dataclass
