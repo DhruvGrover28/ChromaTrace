@@ -27,6 +27,15 @@ pip install -r requirements.txt
 python -m src.vision_lab
 ```
 
+## For Non-Technical Users (Windows)
+Download the latest `ChromaTrace.exe` from the GitHub Releases page, unzip it, and double-click to run.
+
+## Build a Windows EXE (for release)
+```powershell
+.scripts\build_exe.ps1
+```
+The executable will be created at `dist\ChromaTrace.exe`.
+
 ## Controls
 - `q` - Quit
 - `r` - Toggle recording to `output.mp4`
