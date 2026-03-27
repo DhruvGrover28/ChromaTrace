@@ -1,6 +1,6 @@
 # ChromaTrace - Real-Time Color + Shape Tracker
 
-ChromaTrace is a real-time computer vision project that detects colored objects, classifies their shapes, and tracks them with motion trails. It is built to be safe for cameras (no device property writes) and runs on a standard webcam.
+ChromaTrace is a real-time computer vision project that detects colored objects, classifies their shapes, and tracks them with motion trails. It runs on a standard webcam.
 
 ## Features
 - Color segmentation in HSV (red, green, blue, yellow)
